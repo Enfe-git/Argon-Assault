@@ -419,7 +419,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176935038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 120.4, y: 10.16, z: 200.29}
+  m_LocalPosition: {x: 120.4, y: 11.12, z: 200.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
@@ -574,10 +574,10 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 7585099096064186834, guid: 9a39273d18eada84a83493ba3315592b, type: 2}
-    value: {fileID: 1176935039}
   - key: {fileID: -2650560522048055238, guid: 9a39273d18eada84a83493ba3315592b, type: 2}
     value: {fileID: 1738068117}
+  - key: {fileID: 1942898526194066264, guid: 9a39273d18eada84a83493ba3315592b, type: 2}
+    value: {fileID: 1176935039}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1769305092
