@@ -606,14 +606,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1176935040}
     m_Modifications:
-    - target: {fileID: 1819209677476566, guid: 2278c1fb2451f474ba0ee1d88ba85a1e, type: 3}
-      propertyPath: controlRollFactor
-      value: -30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1819209677476566, guid: 2278c1fb2451f474ba0ee1d88ba85a1e, type: 3}
-      propertyPath: positionYawFactor
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7092396009608767349, guid: 2278c1fb2451f474ba0ee1d88ba85a1e, type: 3}
       propertyPath: m_RootOrder
       value: 1
