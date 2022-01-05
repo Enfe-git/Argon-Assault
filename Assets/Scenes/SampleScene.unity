@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &505436677 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1521195308489877221, guid: 9b08e6ca597f49a469a1d2c505abf1d6, type: 3}
+  m_PrefabInstance: {fileID: 3441744170713389378}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +302,11 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 3441744171684201277, guid: 9b08e6ca597f49a469a1d2c505abf1d6, type: 3}
   m_PrefabInstance: {fileID: 3441744170713389378}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1479797977 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 865005633288215016, guid: 9b08e6ca597f49a469a1d2c505abf1d6, type: 3}
+  m_PrefabInstance: {fileID: 3441744170713389378}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1738068116
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,10 +479,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1318393523225603310, guid: 9b08e6ca597f49a469a1d2c505abf1d6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.38
-      objectReference: {fileID: 0}
     - target: {fileID: 3441744171684201276, guid: 9b08e6ca597f49a469a1d2c505abf1d6, type: 3}
       propertyPath: m_Name
       value: Player Rig
@@ -521,5 +527,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5600446334272024276, guid: 9b08e6ca597f49a469a1d2c505abf1d6, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5600446334272024276, guid: 9b08e6ca597f49a469a1d2c505abf1d6, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 1479797977}
+    - target: {fileID: 5600446334272024276, guid: 9b08e6ca597f49a469a1d2c505abf1d6, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 505436677}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b08e6ca597f49a469a1d2c505abf1d6, type: 3}
