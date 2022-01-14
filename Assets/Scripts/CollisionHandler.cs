@@ -6,7 +6,7 @@ using UnityEngine;
 public class CollisionHandler : MonoBehaviour
 {
     void OnCollisionEnter(Collision collision) {
-        Debug.Log(this.name + "collided with " + collision.gameObject.name);
+        Debug.Log(this.name + " collided with " + collision.gameObject.name);
     }
 
 }
