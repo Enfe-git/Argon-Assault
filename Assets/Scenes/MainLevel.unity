@@ -310,7 +310,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0.00000042474517, z: 4.5904e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -405,6 +405,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &960493352 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 770800107929615756, guid: 9b08e6ca597f49a469a1d2c505abf1d6, type: 3}
+  m_PrefabInstance: {fileID: 3441744170713389378}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1176935039 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3441744171684201277, guid: 9b08e6ca597f49a469a1d2c505abf1d6, type: 3}
@@ -613,6 +618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadLevelDelay: 1
+  exploder: {fileID: 960493352}
 --- !u!65 &1872410850
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -744,6 +750,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 770800107929615756, guid: 9b08e6ca597f49a469a1d2c505abf1d6, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 854885043666919796, guid: 9b08e6ca597f49a469a1d2c505abf1d6, type: 3}
       propertyPath: m_Mesh
       value: 
