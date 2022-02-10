@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject deathVFX;
     [SerializeField] Transform parent;
     [SerializeField] int scorePerHit= 15;
+    [SerializeField] int hitPoints = 4;
 
     ScoreBoard scoreBoard;
 
@@ -17,18 +18,21 @@ public class Enemy : MonoBehaviour
 
 
     void OnParticleCollision(GameObject other) {
-        KillEnemy();
         ProcessHit();
+    }
+
+    void ProcessHit() {
+        scoreBoard.IncreaseScore(scorePerHit);
+        hitPoints--;
+        if(hitPoints < 1) {
+            KillEnemy();
+        }
     }
 
     void KillEnemy() {
         GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
         vfx.transform.parent = parent;
         Destroy(gameObject);
-    }
-
-    void ProcessHit() {
-        scoreBoard.IncreaseScore(scorePerHit);
     }
 
 }
