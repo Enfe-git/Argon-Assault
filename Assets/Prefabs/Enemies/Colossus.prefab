@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 4057838650678222350}
   - component: {fileID: 4068327931712224314}
   m_Layer: 0
-  m_Name: StarSparrow10
+  m_Name: Colossus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -284,7 +284,7 @@ Transform:
   m_GameObject: {fileID: 4045136368095868782}
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 3.0887032, y: 4.2, z: -29.702862}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4046680907541650944}
   m_Father: {fileID: 0}

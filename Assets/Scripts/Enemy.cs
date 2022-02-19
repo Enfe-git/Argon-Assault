@@ -6,19 +6,21 @@ public class Enemy : MonoBehaviour
 {
 
     [SerializeField] GameObject deathVFX;
-    [SerializeField] Transform parent;
     [SerializeField] int scorePerHit= 15;
     [SerializeField] int hitPoints = 4;
 
     ScoreBoard scoreBoard;
+    GameObject parentGameObject;
 
     void Start() {
+        scoreBoard = FindObjectOfType<ScoreBoard>();
+        parentGameObject = GameObject.FindWithTag("SpawnAtRuntime");
         AddRigidbody();
 
     }
 
     private void AddRigidbody() {
-        scoreBoard = FindObjectOfType<ScoreBoard>();
+        
         Rigidbody rb = gameObject.AddComponent<Rigidbody>();
         rb.useGravity = false;
     }
@@ -37,7 +39,7 @@ public class Enemy : MonoBehaviour
 
     void KillEnemy() {
         GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
-        vfx.transform.parent = parent;
+        vfx.transform.parent = parentGameObject.transform;
         Destroy(gameObject);
     }
 
